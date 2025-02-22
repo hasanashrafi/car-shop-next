@@ -6,4 +6,4 @@ const sp = (number) => {
     return joinedNumber;
   };
 
-  export {sp}
+  export default  sp
