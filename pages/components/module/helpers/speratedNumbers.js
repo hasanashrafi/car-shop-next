@@ -1,5 +1,5 @@
 const formatNumber = (number, options = {}) => {
-  const formattedNumber = number.toLocaleString(options);
+  const formattedNumber = number.toString(options);
   return formattedNumber;
 };
 
