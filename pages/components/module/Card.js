@@ -1,7 +1,7 @@
 import React from 'react'
 import Location from '../icons/Location'
 import Link from 'next/link'
-import { sp } from './helpers/speratedNumbers'
+import sp from './helpers/speratedNumbers'
 
 function Card(props) {
     const { id, name, model, year, distance,location, image, price } = props
