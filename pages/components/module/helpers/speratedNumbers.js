@@ -1,5 +1,8 @@
 const sp = (number, options = {}) => {
-  
+  if (number === null || number === undefined) {
+    return number; // or return a default value, e.g., "N/A"
+  }
+
   try {
     const formattedNumber = number.toLocaleString(options);
     return formattedNumber;
