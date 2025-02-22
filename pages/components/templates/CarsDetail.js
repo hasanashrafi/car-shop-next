@@ -5,7 +5,7 @@ import Calender from '../icons/Calender'
 import Road from '../icons/Road'
 import Location from '../icons/Location'
 import Money from '../icons/Money'
-import { sp } from '../module/helpers/speratedNumbers'
+import sp from '../module/helpers/speratedNumbers'
 
 function CarsDetail(props) {
     const { id, name, model, year, distance, location, description, image, price } = props
