@@ -1,7 +1,13 @@
-const formatNumber = (number, options = {}) => {
-  const formattedNumber = number.toString(options);
-  return formattedNumber;
+const sp = (number, options = {}) => {
+  if (typeof number !== 'number') {
+    throw new Error('Invalid input: number must be a number type');
+  }
+  try {
+    const formattedNumber = number.toLocaleString(options);
+    return formattedNumber;
+  } catch (error) {
+    throw new Error(`Failed to format number: ${error.message}`);
+  }
 };
 
-
-export default formatNumber
+export default sp
