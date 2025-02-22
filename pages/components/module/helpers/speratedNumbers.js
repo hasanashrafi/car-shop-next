@@ -3,4 +3,5 @@ const formatNumber = (number, options = {}) => {
   return formattedNumber;
 };
 
+
 export default formatNumber
