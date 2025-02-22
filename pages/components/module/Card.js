@@ -10,7 +10,7 @@ function Card(props) {
     return (
         <Link href={`/cars/${id}`}>
             <div className='w-fit m-5 bg-white shadow-xl rounded-md overflow-hidden p-3'>
-                <Image priority alt={name} src={image} className='max-w-80 rounded-sm min-h-64' />
+                <Image width={300} height={500} fetchPriority='high' alt={name} src={image}  />
                 <h4 className='my-3 font-semibold'>{`${name} - ${model}`}</h4>
                 <p className='text-gray my-1 '>{`${year} - ${sp(distance)}km`}</p>
                 <div className='flex justify-between mt-5 '>
