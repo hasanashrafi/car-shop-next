@@ -6,13 +6,14 @@ import Road from '../icons/Road'
 import Location from '../icons/Location'
 import Money from '../icons/Money'
 import sp from '../module/helpers/speratedNumbers'
+import Image from 'next/image'
 
 function CarsDetail(props) {
     const { id, name, model, year, distance, location, description, image, price } = props
 
     return (
         <div className='flex flex-col max-w-4xl m-auto my-5 justify-center'>
-            <img src={image} className='w-full rounded-md' />
+            <Image priority alt={name} src={image} className='w-full rounded-md' />
             <h3 className='my-3 self-center text-2xl font-bold'> {`${name} ${model}`}</h3>
             <div className='flex flex-wrap w-full  justify-around text-md font-semibold shadow-xl p-2 my-5 bg-white rounded-md'>
                 
